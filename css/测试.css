@@ -1,0 +1,118 @@
+/* 给P元素设置属性 */
+/* p{
+    color: red;
+    font-size: 25px;
+} */
+/* id选择给#xxx 单独设置 */
+#测试1{
+    color: rgb(17, 0, 255);
+}
+.测试2{
+    color: rgb(174, 0, 255);
+}
+.测试3{
+    font-size: 25px;
+}
+/* 通配选择器 */
+/* *{
+    color: rgb(0, 102, 255);
+} */
+/* 复合选择器 */
+/* 交集选择器 */
+p.复合1{
+    font-size: 66px;
+}
+/* 并集选择器 选择器分组 */
+/* #1,2,.1,2,div.1 */
+p.复合1,div.复合1{
+    color: rgb(255, 0, 140);
+}
+/* 关系选择器 */
+/* 指定关系 div里的span */
+div>span{
+    color: rgb(0, 255, 255);
+}
+/* div里的p里的span */
+div>p>span{
+    color: rgb(184, 255, 255);
+    font-size: 35px;
+}
+/* 所有关系 div所有p */
+div p{
+    font-size: 20px;
+}
+/* 胸der关系 span后的p 第一个 仅一个 紧挨着 */
+span+p{
+    color: rgb(56, 135, 255);
+}
+/* 后边所有 span后的所有p元素 */
+span~p{
+    font-size: 50px;
+}
+/* 复合选择器 p里有title */
+p[title]{
+    font-size: 1px;
+}
+/* p里有title有"个屁" */
+p[title="个屁"]{
+    color: rgb(255, 118, 214);
+}
+/* p里有title开头含有"1" */
+p[title^="1"]{
+    color: rgb(255, 118, 118);
+}
+/* 属性名^=属性值 属性值以指定值开头 */
+/* 属性名$=属性值 属性值以指定值结尾 */
+/* 属性名*=属性值 属性值中含有指定值 */
+/* 以a结尾b结束的 */
+p[title^="a"],[title$="c"]{
+    color: rgb(118, 255, 164);
+}
+/*
+伪类(不存在的类,特殊类) 描述一个元素的特殊状态 一般以":"开头
+:first-child 第一个元素
+:last-child 最后一个元素
+:nth-child() 第n个元素
+n 0-无穷正
+2n even 偶数元素
+2n-1 2n+1 odd 奇数元素
+在同类元素中起作用:
+:first-of-type
+:last-of-type
+:nth-of-type()
+否定伪类 除了它以外的所有元素
+:not()
+:link 表示没访问过的链接 正常的链接
+:visited 表示访问过的
+:hover 鼠标悬停
+:active 鼠标点击
+*/
+p:hover{
+    color:darkslategrey;
+}
+a:link{
+    color:firebrick
+}
+a:visited{
+    color:goldenrod
+}
+/*
+伪元素(不存在的元素,特殊元素) 特殊位置 一般以"::"开头
+::first-letter 第一个字母
+::first-line 第一行
+background-color 背景颜色
+::selection 表示选中的内容
+::before 元素的开始
+::after 元素的结尾
+::content 添加文字
+*/
+aside::first-letter{
+    font-size:30px;
+}
+aside::first-line{
+    background-color: maroon;
+    color:mediumaquamarine;
+}
+aside::selection{
+    background-color:rgb(255, 0, 0);
+}
