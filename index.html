@@ -1,210 +1,57 @@
 <!DOCTYPE html>
-<!--
-主框架
--->
-<html>
-    <!--网页头 不会显示在网页中-->
-    <head>
-        <!--网页编码 避免乱码-->
-        <meta charset="utf-8">
-        <!--指定关键字-->
-        <meta name="Keywords" content="神枪968">
-        <!--搜索结果的显示介绍-->
-        <meta name="description" content="神枪968制作的网站 真不戳!"/>
-        <!--网页标题-->
-        <title>神枪968的网站</title>
-        <!--网页图标-->
-        <link href="images/ico.png" rel="shortcut icon" type="image/ico">
-        <!-- 
-        本网页设置CSS
-        p{}
-        给P元素设置属性
-        方法1
-        -->
-        <style>
-        /* 例 */
-            /* p{
-                color: red;
-                font-size: 25px;
-            } */
-        </style>
-        <!--
-        方法2
-        所有网页设置CSS
-        link 调用
-        href 路径
-        -->
-        <link rel="stylesheet" href="css/测试.css">
-        <link rel="stylesheet" href="css/loader.css">
-        <script src="https://s3.pstatp.com/cdn/expire-1-M/jquery/2.1.4/jquery.min.js"></script>
-    </head>
-        <!--网页显示内容(主内容)-->
-    <body>
-        <!--主内容代码-->
-        <div id="loader-wrapper">
-            <div id="loader"></div>
-            <div class="loader-section section-left"></div>
-            <div class="loader-section section-right"></div>
-            <div class="load_title">神枪968的网站 正在加载...<br><span>1.0.8</span></div>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>神枪968 个人主页</title>
+    <link href="images/ico.png" rel="shortcut icon" type="image/ico">
+    <!-- 自定义css -->
+    <link rel="stylesheet" href="css/css.css">
+    <!-- 清除样式 -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- lond ing -->
+    <link rel="stylesheet" href="css/loader.css">
+    <!-- times js 计算运行时间 -->
+    <script src="js/times.js"></script>
+    <!-- 原 jquery.min.js 1.11.1 -->
+    <script src="https://s3.pstatp.com/cdn/expire-1-M/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+    <!-- lond ing -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+        <div class="load_title">神枪968的网站 服务器在外国 加载有点慢请耐心等待...<br><span>2.0.0</span></div>
+    </div>
+    <!-- 头 -->
+    <header id="head">
+    <p title="???" style="color:white;">大体就是这样</p>
+    </header>
+    <!-- 中 -->
+    <main id="main">
+    <p title="???">神枪968的网站 暂未制作完成 预计在2021.3.1前完成 正在学习中~ 发现html5太复杂了 要多学几个月QAQ</p>
+    </main>
+    <!-- 底 -->
+    <footer id="bottom">
+        <div id="by">
+        <!-- 1 -->
+            <div class="bottom-text">
+            Copyright © 2021-2021 神枪968. All Rights Reserved
             </div>
-        <h1 title="???"><font color=green>神枪968的网站 <font title="123" color="red" size=5> 暂未制作完成 </font> 预计在2021.3.1前完成 正在学习中~</font></h1>
-        <h2>发现html5太复杂了 要多学几个月QAQ</h2>
-        <a href="#123">去id的地方</a>
-        <!--
-        size="0-7"
-        <em>加斜体
-        <strong>加粗
-        -->
-        <!-- ................ -->
-        <!--
-        布局标签(结构化语义标签)
-        header 表示网页的头部
-        main 表示网页的主体部分(一个页面中只会有一个main)
-        footer 表示网页的底部
-        nav 表示导航
-        aside 和主体相关的内容(侧边栏)
-        article 一个独立的文章
-        .
-        section 一个独立的区块,上面标签都不能表示时使用
-        div 没有意义,表示一个区块,主要的布局元素
-        span 行内元素,没有语义,一般用于文字选择
-        -->
-        <header></header>
-        <main></main>
-        <footer></footer>
-        <!-- 一般不太会用 -->
-        <nav></nav>
-        <aside></aside>
-        <article></article>
-        <div></div>
-        <!-- ------- -->
-        <!--  
-        列表(list)
-        1.有序列表
-        2.无序列表
-        3.定义列表
-        .
-        1.有序
-        ol标签创建有序列表,li表示列表项
-        2.无序
-        ul标签创建有序列表,li表示列表项
-        3.定义
-        dl标签创建有序列表
-        dt表示定义内容
-        dd对内容解释说明
-        4.套娃
-        -->
-        <!-- 1有序 -->
-        <ol>
-            <li>111</li>
-            <li>222</li>
-        </ol>
-        <!-- 2.无序 -->
-        <ul>
-            <li>111</li>
-            <li>222</li>
-        </ul>
-        <!-- 3.定义 -->
-        <dl>
-            <dt>啊这</dt>
-            <dd>啊这,解释,解释个p</dd>
-            <dd>???</dd>
-        </dl>
-        <!-- 4.套娃 -->
-        <ul>
-            <li>1</li>
-                <ol>
-                    <li>2</li>
-                        <dl>
-                            <dt>3</dt>
-                            <dd>4</dd>
-                        </dl>
-                </ol>
-        </ul>
-        <!-- 超链接 -->
-        <!--
-        _self 默认 在当前页面打开
-        _blank 在新的页面打开
-        # 到达最顶部
-        #xxx #id 去id的地方
-        id 唯一的 每个元素都可以有
-        name 和id 差不多
-        -->
-        <a id="123" href="https://www.baidu.com" target="_blank">百度</a>
-        <!-- 图片标签
-        img 自结束标签
-        src 外部图片路径
-        alt 描述图片 如果无法显示图像，将显示 "alt" 属性中的文本
-        width 宽
-        height 高
-        当一个超链接使用
-        <body background=""> gif 和 jpg 文件均可用作背景 如果图像小于页面，图像会进行重复。
-        title 标题 可用于所有元素
-        -->
-        <a href="https://www.baidu.com">
-        <img title="神枪968" src="images/ico.png" alt="n_m_s_l" width="100" height="100">
-        </a>
-        <br>
-        <br>
-        <img src="images/ico" alt="加载失败看了个寂寞">
-        <!-- 
-        内联框架(网页里的网页) 
-        src 链接
-        可自定义宽高
-        frameborder 是否有边框 0无 1有
-        -->
-        <br>
-        <h1></h1>
-        <!-- <iframe src="index.html" frameborder="0" width="666" height="666"> -->
-        <br>
-        <!-- 
-        controls 是否可用自己调整 
-        autoplay 自动播放 基本没用对大部分浏览器
-        loop 循环播放
-        -->
-        <!-- 引入音频 -->
-        <audio src="1.mp3" controls loop><h1>加载失败听了个寂寞</h1></audio>
-        <!-- <embed src="1.mp3" type="audio/mp3"> -->
-        <!-- 引入视频 -->
-        <!-- <video src=""></video> -->
-        <!-- 图片 视频 音频 老版本 不推荐 无视一切自动播放-->
-        <!-- <embed src="" type=""> -->
-        <!-- 内联样式,行内样式 -->
-        <p style="color: red;font-size: 25px;">123</p>
-        <p id="测试1">666</p>
-        <!-- class和id类似 但是可以重复 -->
-        <p class="测试2">zbc</p>
-        <!-- 多个class一起用 空格隔开 -->
-        <p class="测试2 测试3">真不戳</p>
-        <p class="复合1">复合1</p>
-        <div class="复合1">复合2</div>
-        <div>div;
-            <span>div>span;</span>
-            <p>span后的p div>p;
-                <span>div>p>span;
-                    <p>div>p>span>p;
-                        <span>
-                            <p>div>p>span>p>span>p;</p>
-                        </span>
-                    </p>
-                </span>
-            </p>
+        <!-- 2 -->
+            <div class="bottom-text">
+            神枪968 版权所有
+            </div>
+            <div id="times" class="bottom-text-2"></div>
         </div>
-        <p title="1个屁">真不错</p>
-        <p title="1没错">真不错</p>
-        <p title="啊这">真不错</p>
-        <p title="a2c">真不错</p>
-        <aside>1zb</aside>
-        <aside>zb1</aside>
-        <aside>真不戳2</aside>
-        <aside>行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行行</aside>
-        <script>
-            // 等待所有加载
-            $(window).load(function(){
-                $('body').addClass('loaded');
-                $('#loader-wrapper .load_title').remove();
-            });				
-        </script>
-    </body>
+    </footer>
+    <!-- 结尾 -->
+    <script>
+		// 等待所有加载
+		$(window).load(function(){
+			$('body').addClass('loaded');
+			$('#loader-wrapper .load_title').remove();
+        });
+	</script>
+</body>
 </html>
-<!--结束-->
