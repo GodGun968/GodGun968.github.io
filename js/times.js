@@ -18,17 +18,9 @@ function show_date_time(){
     e_mins_old=(e_hrs_old-hrs_old)*60;
     mins_old=Math.floor((e_hrs_old-hrs_old)*60);
     seconds=Math.floor((e_mins_old-mins_old)*60);
-    // 自定义id
-    times.innerHTML="<span>已运行:"+years_old+"年"+months_old+"月"+days_old+ "天" +hrs_old+"时"+mins_old+"分"+seconds+"秒"+"</span>";
-}
-show_date_time();
-
-function show_date_rights(){
-    window.setTimeout("show_date_rights()", 1000);
-    // 日期
-    today=new Date();
     years=today.getFullYear();
     // 自定义id
     rights.innerHTML="<span>"+years+"年"+"</span>";
+    times.innerHTML="<span>已运行:"+years_old+"年"+months_old+"月"+days_old+ "天" +hrs_old+"时"+mins_old+"分"+seconds+"秒"+"</span>";
 }
-show_date_rights();
+show_date_time();
