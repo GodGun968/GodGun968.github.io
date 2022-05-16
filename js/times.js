@@ -22,3 +22,13 @@ function show_date_time(){
     times.innerHTML="<span>已运行:"+years_old+"年"+months_old+"月"+days_old+ "天" +hrs_old+"时"+mins_old+"分"+seconds+"秒"+"</span>";
 }
 show_date_time();
+
+function show_date_time(){
+    window.setTimeout("show_date_time()", 1000);
+    // 日期
+    today=new Date();
+    let thieYear = date.getFullYear()
+    // 自定义id
+    rights.innerHTML="<span>thieYear+"年"+"</span>";
+}
+show_date_time();
