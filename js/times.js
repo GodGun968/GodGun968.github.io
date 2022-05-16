@@ -20,7 +20,7 @@ function show_date_time(){
     seconds=Math.floor((e_mins_old-mins_old)*60);
     years=today.getFullYear();
     // 自定义id
-    rights.innerHTML="<span>"+years+"年"+"</span>";
+    rights.innerHTML="Copyright © 2021-"+years+" 神枪968. All Rights Reserved";
     times.innerHTML="<span>已运行:"+years_old+"年"+months_old+"月"+days_old+ "天" +hrs_old+"时"+mins_old+"分"+seconds+"秒"+"</span>";
 }
 show_date_time();
