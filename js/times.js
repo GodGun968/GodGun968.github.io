@@ -23,12 +23,12 @@ function show_date_time(){
 }
 show_date_time();
 
-function show_date_time(){
-    window.setTimeout("show_date_time()", 1000);
+function show_date_rights(){
+    window.setTimeout("show_date_rights()", 1000);
     // 日期
     today=new Date();
-    let thieYear = date.getFullYear()
+    years=today.getFullYear();
     // 自定义id
-    rights.innerHTML="<span>thieYear+"年"+"</span>";
+    rights.innerHTML="<span>"+years+"年"+"</span>";
 }
-show_date_time();
+show_date_rights();
